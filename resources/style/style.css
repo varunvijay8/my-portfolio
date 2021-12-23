@@ -111,3 +111,22 @@ body {
     height: 100%;
 
 }
+
+.main-container {
+    display: grid;
+    grid-template: repeat(60,1fr) / repeat(24, 1fr);
+    margin: auto;
+}
+
+.main-container .pic {
+    grid-area: 2 / 2 / span 4 / span 12;
+}
+
+.main-container .pic img {
+    width: 40%;
+    height: 100%;
+}
+
+.main-container .about-me {
+    grid-area: 2 / 8 / span 4 / span 12;
+}
